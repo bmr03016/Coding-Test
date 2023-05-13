@@ -1,0 +1,19 @@
+while True:
+    list_a = input().split()
+    a = int(list_a[0])
+    b = int(list_a[1])
+    
+    if a < b:
+        if b % a == 0: # 약수 인 경우
+            print("factor")
+        else :
+            print("neither")
+    elif a > b:
+        if a % b == 0: # 배수 인 경우
+            print("multiple")
+        else :
+            print("neither")
+    elif a == 0 and b == 0: # 0 0 이면 종료
+        break
+    else :
+        print("neither")
